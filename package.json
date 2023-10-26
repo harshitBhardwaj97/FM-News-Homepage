@@ -1,0 +1,15 @@
+{
+  "name": "news-homepage",
+  "version": "1.0.0",
+  "description": "FrontendMentor-NewsHomepage",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./index.css -o ./main.css",
+    "watch": "tailwindcss -i ./index.css -o ./main.css --watch"
+  },
+  "author": "Harshit Bhardwaj",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

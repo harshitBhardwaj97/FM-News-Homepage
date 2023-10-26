@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="index.js"></script>
+
+    <title>Frontend Mentor | News Homepage</title>
+  </head>
+  <body class="bg-neutralOffWhite">
+    <div class="container max-w-7xl mx-auto p-2 m-2 relative scroll-smooth">
+      <header class="bg-gray-200 p-4 m-2">
+        <nav class="flex items-center justify-between">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+          </div>
+          <div class="links hidden md:flex items-center gap-4">
+            <div
+              class="link hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer"
+            >
+              Home
+            </div>
+            <div
+              class="link hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer"
+            >
+              News
+            </div>
+            <div
+              class="link hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer"
+            >
+              Popular
+            </div>
+            <div
+              class="link hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer"
+            >
+              Trending
+            </div>
+            <div
+              class="link hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer"
+            >
+              Categories
+            </div>
+          </div>
+          <!-- Mobile menu link -->
+          <div class="mobileMenuBtn md:hidden">
+            <img
+              src="./assets/images/icon-menu.svg"
+              class="cursor-pointer menuIcon"
+              alt="MenuIcon"
+            />
+          </div>
+          <div class="mobileMenu fixed top-0 right-0 w-[50%] p-3 bg-neutralOffWhite hidden h-screen text-black m-3 transition-all">
+            <div class="closeIcon">
+              <img src="./assets/images/icon-menu-close.svg" class="cursor-pointer closeIcon absolute right-5 transition-all"alt="Close">
+            </div>
+            <div class="mobileLinks mt-16">
+              <p class="p-4  hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer">Home</p>
+              <p class="p-4  hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer">News</p>
+              <p class="p-4  hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer">Popular</p>
+              <p class="p-4  hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer">Trending</p>
+              <p class="p-4  hover:text-primarySoftRed scale-105 ease-linear duration-100 cursor-pointer">Categories</p>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="section flex flex-col lg:grid grid-cols-3 gap-3 m-3">
+        <div class="mainImage lg:col-span-2 row-start-1">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            class="h-100"
+            alt="main-image"
+          />
+        </div>
+        <div
+          class="rightSection bg-neutralVeryDarkBlue p-8 order-3 lg:col-span-1 lg:row-span-2"
+        >
+          <div class="news__type font-bold text-3xl text-primarySoftOrange">
+            New
+          </div>
+          <div class="news text-white">
+            <div class="news__heading font-bold text-xl pb-2 cursor-pointer hover:text-primarySoftOrange ease-linear duration-150">
+              Hydrogen VS Electric Cars
+            </div>
+            <div
+              class="news__content border-b-[0.5px] border-neutralOffWhite pb-4 mb-4"
+            >
+              Will hydrogen fueled cars ever catch up to EVs ?
+            </div>
+          </div>
+          <div class="news text-white">
+            <div class="news__heading font-bold text-xl pb-2 cursor-pointer hover:text-primarySoftOrange ease-linear duration-150">
+              The Downsides of AI Artistry
+            </div>
+            <div
+              class="news__content border-b-[0.5px] border-neutralOffWhite pb-4 mb-4"
+            >
+              What are the possible adverse effects of on demand AI image
+              generation?
+            </div>
+          </div>
+          <div class="news text-white">
+            <div class="news__heading font-bold text-xl pb-2 cursor-pointer hover:text-primarySoftOrange ease-linear duration-150">
+              IS VC Funding Drying Up ?
+            </div>
+            <div class="news__content">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </div>
+          </div>
+        </div>
+        <div
+          class="leftSection order-2 lg:flex items-center justify-between p-4 lg:row-start-2 lg:col-span-2"
+        >
+          <div
+            class="heading flex-1  font-extrabold text-5xl text-neutralVeryDarkBlue col-span-2 row-start-2"
+          >
+            <h1>The Bright Future of Web 3.0 ?</h1>
+          </div>
+          <div class="content flex-1">
+            <div class="content__info">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling the promise ?
+            </div>
+            <div
+              class="read__more uppercase bg-primarySoftRed text-neutralOffWhite px-4 py-3 w-[40%] text-center font-bold mt-4 hover:bg-neutralVeryDarkBlue ease-linear duration-100 cursor-pointer"
+            >
+              Read More
+            </div>
+          </div>
+        </div>
+
+        <div class="footer gap-3 order-4 lg:flex lg:row-start-3 lg:col-span-3 mb-3">
+          <div class="footer__item flex items-center gap-3 mb-3">
+            <div class="footer__image">
+              <img src="/assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" />
+            </div>
+            <div
+              class="footer__content flex flex-col justify-between py-4 gap-4"
+            >
+              <div
+                class="number text-3xl font-bold text-neutralDarkGrayishBlue"
+              >
+                01
+              </div>
+              <h1
+                class="font-bold text-xl hover:text-primarySoftRed cursor-pointer ease-linear duration-100"
+              >
+                Reviving Retro PCs
+              </h1>
+              <p class="text-neutralDarkGrayishBlue">
+                What happens when old PCs are given modern upgrades ?
+              </p>
+            </div>
+          </div>
+          <div class="footer__item flex items-center gap-3 mb-3">
+            <div class="footer__image">
+              <img src="/assets/images/image-top-laptops.jpg" alt="image-top-laptops" />
+            </div>
+            <div
+              class="footer__content flex flex-col justify-between py-4 gap-4"
+            >
+              <div
+                class="number text-3xl font-bold text-neutralDarkGrayishBlue"
+              >
+                02
+              </div>
+              <h1
+                class="font-bold text-xl hover:text-primarySoftRed cursor-pointer ease-linear duration-100"
+              >
+                Top 10 Laptops of 2022
+              </h1>
+              <p class="text-neutralDarkGrayishBlue">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="footer__item flex items-center gap-3">
+            <div class="footer__image">
+              <img src="/assets/images/image-gaming-growth.jpg" alt="image-gaming-growth" />
+            </div>
+            <div
+              class="footer__content flex flex-col justify-between py-4 gap-4 mb-3"
+            >
+              <div
+                class="number text-3xl font-bold text-neutralDarkGrayishBlue"
+              >
+                03
+              </div>
+              <h1
+                class="font-bold text-xl hover:text-primarySoftRed cursor-pointer ease-linear duration-100"
+              >
+                The growth of Gaming
+              </h1>
+              <p class="text-neutralDarkGrayishBlue">
+                How pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
